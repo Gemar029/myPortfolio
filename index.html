@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemar Alegre | Portfolio</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="images/SidebarGemar.jpg" alt="Gemar Alegre" class="sidebar-avatar" />
+      <h1>Gemar Alegre</h1>
+      <p>Web Developer</p>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#aboutme" class="active">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+    </nav>
+    <div class="sidebar-social">
+      <a href="https://www.facebook.com/ragem.alegre/" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+      <a href="https://github.com/Gemar029" target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="https://mail.google.com/mail/?view=cm&to=gemar.alegreofficial@gmail.com,gemar.alegre29@gmail.com&su=Contacting%20Gemar%20Alegre&body=Hi%2C%0A%0AThank%20you%20for%20your%20interest.%20You%20can%20contact%20me%20through%20the%20following%20details%3A%0A%0AEmail%20address%3A%20gemar.alegreofficial%40gmail.com%20or%20gemar.alegre29%40gmail.com%0AMobile%20number%3A%2009128939488%20or%2009763790605%0ALinkedIn%3A%20https%3A%2F%2Fwww.linkedin.com%2Fin%2Fgemar-alegre-150932275%2F" target="_blank">
+        <i class="bx bxl-gmail"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Mobile Header -->
+  <header class="mobile-header">
+    <a href="#" class="logo">Gemar <span>Alegre</span></a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#aboutme" class="active">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Me -->
+    <section class="aboutme glass" id="aboutme">
+      <div class="aboutme-content">
+        <h2>
+          <span class="wave">👋</span>
+          <span id="animated-text"></span>
+        </h2>
+        <h3>Full Stack <span id="my-title">Software Engineer</span></h3>
+        <p id="my-description"></p>
+        <div class="btn-group">
+          <a href="Alegre_Gemar_09128939488_gemar.alegreofficial@gmail.pdf" class="btn btn-outline2 btn-glow" target="_blank">Download CV</a>
+          <button id="openContactPrompt" class="btn btn-outline btn-glow">Contact Me</button>
+        </div>
+      </div>
+      <div class="aboutme-img">
+        <img src="images/GemarAlegre.png" alt="Gemar Alegre" />
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills glass" id="skills">
+      <h2><i class="bx bx-bolt"></i> Skills</h2>
+      <div class="skills-grid">
+        <!-- Repeatable Skill Card -->
+        <div class="skill-card skill-fade"><img src="images/html.png" alt="HTML" /><span>HTML</span></div>
+        <div class="skill-card skill-fade"><img src="images/css-3.png" alt="CSS" /><span>CSS</span></div>
+        <div class="skill-card skill-fade"><img src="images/java-script.png" alt="Javascript" /><span>Javascript</span></div>
+        <div class="skill-card skill-fade"><img src="images/php-programming-language.png" alt="PHP" /><span>PHP</span></div>
+        <div class="skill-card skill-fade"><img src="images/sql-server.png" alt="SQL" /><span>SQL</span></div>
+        <div class="skill-card skill-fade"><img src="images/laravel.svg" alt="Laravel" /><span>Laravel</span></div>
+        <div class="skill-card skill-fade"><img src="images/MongoDB.svg" alt="MongoDB" /><span>MongoDB</span></div>
+        <div class="skill-card skill-fade"><img src="images/Express.png" alt="Express" /><span>Express</span></div>
+        <div class="skill-card skill-fade"><img src="images/react.svg" alt="React" /><span>React</span></div>
+        <div class="skill-card skill-fade"><img src="images/node-js.svg" alt="Node" /><span>Node</span></div>
+        <div class="skill-card skill-fade"><img src="images/postman.svg" alt="Postman" /><span>Postman</span></div>
+        <div class="skill-card skill-fade"><img src="images/file.png" alt="Java" /><span>Java</span></div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications glass" id="certifications">
+      <h2>Certifications</h2>
+      <div class="certifications-grid">
+        <div class="cert-card cert-fade">
+          <img src="images/Certificate1.png" alt="Zuitt Certificate" />
+          <a href="http://share.zertify.zuitt.co/certificate/b6dbf287-f3eb-4357-b9aa-b7d168994eeb">ZUITT Full Stack Completion Certificate</a>
+        </div>
+        <div class="cert-card cert-fade">
+          <img src="images/Cert2.png" alt="Zuitt Certificate" />
+          <a href="https://share.zertify.zuitt.co/certificate/0c70d70c-c3c1-4966-8a3d-f32afadcd691/">ZUITT Back-End Completion Certificate</a>
+        </div>
+        <div class="cert-card cert-fade">
+          <img src="images/Cert3.png" alt="Zuitt Certificate" />
+          <a href="https://share.zertify.zuitt.co/certificate/b0f4028c-7b06-4464-8524-774871da23b6/">ZUITT Front-End Completion Certificate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactPrompt" class="contact-modal">
+      <div class="contact-content">
+        <span id="closePrompt" class="close-btn">&times;</span>
+        <h2>Send a Message</h2>
+        <p class="contact-phone">
+          <i class="bx bx-phone-call"></i>
+          <a href="tel:+639128939488">+63 912 893 9488 or +63 976 379 0605</a>
+        </p>
+        <form id="contactFormPrompt">
+          <input type="text" id="namePrompt" placeholder="Your Name" required />
+          <input type="email" id="emailPrompt" placeholder="Your Email" required />
+          <textarea id="messagePrompt" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-outline2 btn-glow">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="contact-modal">
+      <div class="contact-content">
+        <span id="closeSuccessModal" class="close-btn">&times;</span>
+        <h2>✅ Message Sent</h2>
+        <p>Thank you! I’ll get back to you soon.</p>
+      </div>
+    </div>
+    <!-- Project section -->
+    <section class="projects glass" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card project-fade">
+          <img src="images/project1.png" alt="Project 1">
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio showcasing skills, certificates, and contact info.</p>
+          <a href="https://github.com/Gemar029/portfolio" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card project-fade">
+          <img src="images/project2.png" alt="Project 2">
+          <h3>Task Manager App</h3>
+          <p>A CRUD-based to-do list with PHP and MySQL backend.</p>
+          <a href="https://github.com/Gemar029/task-manager" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card project-fade">
+          <img src="images/project3.png" alt="Project 3">
+          <h3>E-commerce Demo</h3>
+          <p>Front-end React application simulating an online store.</p>
+          <a href="https://github.com/Gemar029/ecommerce-demo" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://www.facebook.com/ragem.alegre/" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="https://github.com/Gemar029" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&to=gemar.alegreofficial@gmail.com,gemar.alegre29@gmail.com&su=Contacting%20Gemar%20Alegre&body=Hi%2C%0A%0AThank%20you%20for%20your%20interest.%20You%20can%20contact%20me%20through%20the%20following%20details%3A%0A%0AEmail%20address%3A%20gemar.alegreofficial%40gmail.com%20or%20gemar.alegre29%40gmail.com%0AMobile%20number%3A%2009128939488%20or%2009763790605%0ALinkedIn%3A%20https%3A%2F%2Fwww.linkedin.com%2Fin%2Fgemar-alegre-150932275%2F" target="_blank">
+            <i class="bx bxl-gmail"></i>
+          </a>
+        </div>
+        <p class="copyright">&copy; Gemar Alegre | All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
