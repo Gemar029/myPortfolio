@@ -1,3 +1,9 @@
+//remove the blinking effect when refreshing the page 
+window.onload = function () {
+        setTimeout(function() {
+            document.getElementById("body").style.display = "";        
+        }, 100);
+    }
 // Responsive Navbar (Mobile)
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
