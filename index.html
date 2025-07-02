@@ -56,7 +56,7 @@
         <p id="my-description"></p>
         <div class="btn-group">
           <a href="Alegre_Gemar_09128939488_gemar.alegreofficial@gmail.pdf" class="btn btn-outline2 btn-glow" target="_blank">Download CV</a>
-          <button id="openContactPrompt" class="btn btn-outline btn-glow">Contact Me</button>
+          <button id="openContactModal" class="btn btn-outline btn-glow">Contact Me</button>
         </div>
       </div>
       <div class="aboutme-img">
@@ -104,29 +104,29 @@
     </section>
 
     <!-- Contact Modal -->
-    <div id="contactPrompt" class="contact-modal">
-      <div class="contact-content">
-        <span id="closePrompt" class="close-btn">&times;</span>
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span id="closeContactModal" class="modal-close">&times;</span>
         <h2>Send a Message</h2>
-        <p class="contact-phone">
+        <p class="modal-contact-info">
           <i class="bx bx-phone-call"></i>
           <a href="tel:+639128939488">+63 912 893 9488 or +63 976 379 0605</a>
         </p>
-        <form id="contactFormPrompt">
-          <input type="text" id="namePrompt" placeholder="Your Name" required />
-          <input type="email" id="emailPrompt" placeholder="Your Email" required />
-          <textarea id="messagePrompt" rows="4" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn btn-outline2 btn-glow">Send</button>
+        <form id="contactForm">
+          <input type="text" id="contactName" placeholder="Your Name" required />
+          <input type="email" id="contactEmail" placeholder="Your Email" required />
+          <textarea id="contactMessage" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="cbtn cbtn-outline2 cbtn-glow">Send</button>
         </form>
       </div>
     </div>
-
     <!-- Success Modal -->
-    <div id="successModal" class="contact-modal">
-      <div class="contact-content">
-        <span id="closeSuccessModal" class="close-btn">&times;</span>
-        <h2>✅ Message Sent</h2>
-        <p>Thank you! I’ll get back to you soon.</p>
+    <div id="successModal" class="modal">
+      <div class="modal-content success-box">
+        <span id="closeSuccessModal" class="modal-close">&times;</span>
+        <div class="success-icon">✅</div>
+        <h2 class="success-title">Message Sent</h2>
+        <p class="success-text">Thank you! I’ll get back to you soon.</p>
       </div>
     </div>
     <!-- Project section -->
