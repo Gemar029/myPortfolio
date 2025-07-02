@@ -679,6 +679,16 @@ section:hover {
   border-radius: 16px;
   border: 1px solid #e2e8f0;
   transition: all 0.2s ease;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.modal-contact-info a {
+  display: inline-block;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  word-break: break-word;
+  white-space: normal;
+  line-height: 1.4;
 }
 
 .modal-contact-info:hover {
