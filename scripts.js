@@ -115,57 +115,71 @@ window.addEventListener('load', () => {
   }, 3000);
 })();
 
-// Contact Prompt Modal
+// Modal Logic
 document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('contactPrompt');
-  const openBtn = document.getElementById('openContactPrompt');
-  const closeBtn = document.getElementById('closePrompt');
-  const form = document.getElementById('contactFormPrompt');
-  const successModal = document.getElementById('successModal'); // Ensure this exists in HTML
+  // ✅ Ensure modals are hidden on initial page load
+  document.getElementById('contactModal').style.display = 'none';
+  document.getElementById('successModal').style.display = 'none';
 
-  // Open Modal
-  openBtn.addEventListener('click', e => {
+  const modal = document.getElementById('contactModal');
+  const openBtn = document.getElementById('openContactModal');
+  const closeBtn = document.getElementById('closeContactModal');
+  const form = document.getElementById('contactForm');
+  const successModal = document.getElementById('successModal');
+  const closeSuccessBtn = document.getElementById('closeSuccessModal');
+
+  // Open Contact Modal
+  openBtn.addEventListener('click', (e) => {
     e.preventDefault();
     modal.style.display = 'flex';
   });
 
-  // Close Modal
+  // Close Contact Modal
   closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
     form.reset();
   });
 
-  // Close if clicked outside
-  window.addEventListener('click', e => {
+  // Close Contact Modal when clicking outside the box
+  window.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.style.display = 'none';
       form.reset();
     }
   });
 
-  // Submit Form
-  form.addEventListener('submit', e => {
+  // Close Success Modal (optional close button)
+  if (closeSuccessBtn) {
+    closeSuccessBtn.addEventListener('click', () => {
+      successModal.style.display = 'none';
+    });
+  }
+
+  // Submit Contact Form
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const name = document.getElementById('namePrompt').value.trim();
-    const email = document.getElementById('emailPrompt').value.trim();
-    const message = document.getElementById('messagePrompt').value.trim();
+    const name = document.getElementById('contactName').value.trim();
+    const email = document.getElementById('contactEmail').value.trim();
+    const message = document.getElementById('contactMessage').value.trim();
 
     if (!name || !email || !message) {
       alert('Please fill in all fields.');
       return;
     }
 
-    // Simulate form processing
+    // Simulate form submission
     setTimeout(() => {
       form.reset();
       modal.style.display = 'none';
       successModal.style.display = 'flex';
 
-      // Auto-close after 3 seconds
+      // Auto-close success modal after 3 seconds
       setTimeout(() => {
         successModal.style.display = 'none';
-      }, 3000);
+      }, 2000);
     }, 1000);
   });
 });
+
+
