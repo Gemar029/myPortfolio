@@ -495,7 +495,7 @@ section:hover {
 
 .cert-card img {
   width: 100%;
-  max-width: 200px;
+  max-width: 350px;
   height: auto;
   margin-bottom: 1.5rem;
   z-index: 1;
@@ -520,7 +520,7 @@ section:hover {
 }
 
 .cert-card a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #1a73e8;
   text-decoration: none;
@@ -530,6 +530,18 @@ section:hover {
   line-height: 1.4;
   transition: color 0.2s ease;
   border-bottom: 2px solid transparent;
+}
+
+.cert-description {
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: var(--text-light, #6b7280);
+  margin-top: 1rem;
+  z-index: 1;
+  position: relative;
+  line-height: 1.6;
+  text-align: left;
+  width: 100%;
 }
 
 .cert-card a:hover {
@@ -567,6 +579,7 @@ section:hover {
 }
 
 /* Mobile specific adjustments */
+
 @media (max-width: 480px) {
   .certifications {
     padding-top: 2rem;
@@ -1777,6 +1790,14 @@ section:hover {
   .aboutme-content p {
     font-size: 1.4rem;
     line-height: 1.6;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
   }
 }
 

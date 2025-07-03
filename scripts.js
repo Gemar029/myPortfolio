@@ -174,18 +174,31 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Simulate form submission
-    setTimeout(() => {
+    // Send email using EmailJS
+    const templateParams = {
+    name: name,
+    email: email,
+    message: message,
+  };
+
+  emailjs.send('service_mcrst8c', 'template_zgueelg', templateParams)
+    .then(() => {
+      // ✅ Show success modal
       form.reset();
       modal.style.display = 'none';
       successModal.style.display = 'flex';
 
-      // Auto-close success modal after 3 seconds
       setTimeout(() => {
         successModal.style.display = 'none';
       }, 2000);
-    }, 1000);
+    })
+    .catch((error) => {
+      console.error('EmailJS error:', error);
+      alert('Failed to send message. Please try again.');
+    });
+
   });
 });
+
 
 

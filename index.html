@@ -90,15 +90,30 @@
       <div class="certifications-grid">
         <div class="cert-card cert-fade">
           <img src="images/Certificate1.png" alt="Zuitt Certificate" />
-          <a href="http://share.zertify.zuitt.co/certificate/b6dbf287-f3eb-4357-b9aa-b7d168994eeb">ZUITT Full Stack Completion Certificate</a>
+          <a href="http://share.zertify.zuitt.co/certificate/b6dbf287-f3eb-4357-b9aa-b7d168994eeb" target="blank">ZUITT Full Stack Completion</a>
+          <div class="cert-description">
+            <p>
+              Completed full-stack web development training focused on the MERN stack (MongoDB, Express, React, Node.js), with hands-on experience in building responsive web applications.
+            </p>            
+          </div>
         </div>
         <div class="cert-card cert-fade">
           <img src="images/Cert2.png" alt="Zuitt Certificate" />
-          <a href="https://share.zertify.zuitt.co/certificate/0c70d70c-c3c1-4966-8a3d-f32afadcd691/">ZUITT Back-End Completion Certificate</a>
+          <a href="https://share.zertify.zuitt.co/certificate/0c70d70c-c3c1-4966-8a3d-f32afadcd691/" target="blank">ZUITT Back-End Completion</a>
+          <div class="cert-description">
+          <p>
+            Skilled in building RESTful APIs using Node.js and Express, with MongoDB for data management. Experienced in API testing with Postman, implementing JWT authentication, and deploying applications on Vercel
+          </p>            
+          </div>
         </div>
         <div class="cert-card cert-fade">
           <img src="images/Cert3.png" alt="Zuitt Certificate" />
-          <a href="https://share.zertify.zuitt.co/certificate/b0f4028c-7b06-4464-8524-774871da23b6/">ZUITT Front-End Completion Certificate</a>
+          <a href="https://share.zertify.zuitt.co/certificate/b0f4028c-7b06-4464-8524-774871da23b6/" target="blank">ZUITT Front-End Completion</a>
+          <div class="cert-description">
+            <p>
+              Proficient in building responsive user interfaces using HTML, CSS, and Bootstrap 4. Experienced in version control and collaboration using Git.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -114,9 +129,9 @@
           <a href="tel:+63 976 379 0605">+63 976 379 0605</a>
         </p>
         <form id="contactForm">
-          <input type="text" id="contactName" placeholder="Your Name" required />
-          <input type="email" id="contactEmail" placeholder="Your Email" required />
-          <textarea id="contactMessage" rows="4" placeholder="Your Message" required></textarea>
+          <input type="text" name="name" id="contactName" autocomplete="name" placeholder="Your Name" required />
+          <input type="email" name="email" autocomplete="email" id="contactEmail" placeholder="Your Email" required />
+          <textarea id="contactMessage" autocomplete="message" name="message" rows="4" placeholder="Your Message" required></textarea>
           <button type="submit" class="cbtn cbtn-outline2 cbtn-glow body id="body" style="display:nonebtn-glow">Send</button>
         </form>
       </div>
@@ -171,5 +186,8 @@
 
   <!-- Scripts -->
   <script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>emailjs.init('l60NZFNgB-8vDPHKn');</script>
+
 </body>
 </html>
