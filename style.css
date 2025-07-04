@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+@import 'boxicons/css/boxicons.min.css';
+
+
 :root {
   --bg: #f7f8fa;
   --sidebar-bg: #1a1d23;
